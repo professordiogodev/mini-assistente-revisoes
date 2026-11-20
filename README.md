@@ -85,8 +85,8 @@ as tuas alterações lá e entregar o link.
 
 ```bash
 cd ~
-git clone https://github.com/O-TEU-UTILIZADOR/O-NOME-DO-REPO.git
-cd O-NOME-DO-REPO
+git clone https://github.com/O-TEU-UTILIZADOR/mini-assistente-revisoes.git
+cd mini-assistente-revisoes
 code .
 ```
 
@@ -465,7 +465,7 @@ Abre o teu fork no GitHub e confirma que as tuas alterações estão lá
 Na tarefa do Teams, entrega:
 
 1. **As 6 screenshots**
-2. **O link do teu fork** (ex.: `https://github.com/o-teu-utilizador/nome-do-repo`)
+2. **O link do teu fork** (ex.: `https://github.com/o-teu-utilizador/mini-assistente-revisoes`)
 
 ### 5.4 Arrumar
 

@@ -1,0 +1,38 @@
+# ==========================================================================
+# MODELFILE — a "receita" do nosso assistente
+# ==========================================================================
+# Um Modelfile diz ao Ollama como criar um modelo NOVO a partir de um que
+# já tens. Não treina nada de novo: só define o modelo base, alguns
+# parâmetros e as instruções de sistema (a "personalidade").
+#
+# Depois de editares este ficheiro, cria o modelo com:
+#     ollama create assistente -f servico_llm/Modelfile
+# ==========================================================================
+
+
+# --------------------------------------------------------------------------
+# TODO 3: FROM indica o modelo BASE.
+#   Corre `ollama list` no terminal e põe aqui o nome de um modelo que já
+#   tenhas descarregado. Copia o nome COMPLETO, incluindo o que vem
+#   depois dos dois pontos (por exemplo: llama3.2:3b, qwen2.5:3b, ...).
+# --------------------------------------------------------------------------
+FROM llama3.2
+
+
+# PARAMETER muda o comportamento do modelo.
+# temperature: 0 = respostas mais previsíveis / 1 = mais criativas
+PARAMETER temperature 0.7
+
+
+# --------------------------------------------------------------------------
+# TODO 4: escreve a mensagem de SISTEMA (entre as aspas triplas).
+#   É um texto que o modelo "lê" antes de todas as perguntas.
+#   Dá-lhe uma personalidade à tua escolha, mas inclui estas 2 regras:
+#     - responde sempre em português de Portugal
+#     - responde em no máximo 3 frases
+#
+#   Exemplo de ideia: "És um pirata que explica informática..."
+# --------------------------------------------------------------------------
+SYSTEM """
+Escreve aqui a personalidade do teu assistente.
+"""

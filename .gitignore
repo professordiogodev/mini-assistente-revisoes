@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# Soluções do professor (não vão para o GitHub)
+_solucao/

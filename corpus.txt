@@ -1,0 +1,25 @@
+O modelo de linguagem aprende a prever a próxima palavra.
+O modelo lê muito texto e conta quais palavras aparecem juntas.
+Um bigrama é um par de palavras seguidas.
+Um trigrama é um grupo de três palavras seguidas.
+O modelo de bigramas olha só para a palavra anterior.
+O modelo de trigramas olha para as duas palavras anteriores.
+Um neurónio recebe entradas, multiplica cada entrada por um peso e soma tudo.
+Depois o neurónio aplica uma função de ativação ao resultado.
+Uma rede neuronal é feita de muitos neurónios ligados entre si.
+Um modelo de linguagem grande tem milhões de neurónios e milhares de milhões de pesos.
+O modelo corre localmente no nosso computador com o Ollama.
+O Ollama permite descarregar um modelo e conversar com ele no terminal.
+Com um Modelfile podemos dar uma personalidade ao modelo.
+O Modelfile define o modelo base, os parâmetros e a mensagem de sistema.
+A temperatura controla a criatividade do modelo.
+Com temperatura baixa o modelo dá respostas mais previsíveis.
+Com temperatura alta o modelo dá respostas mais criativas.
+O RAG junta ao pedido pedaços de documentos relevantes.
+Com o RAG o modelo responde com base nos nossos documentos.
+Um micro-serviço é um pequeno programa que faz uma só coisa.
+Cada micro-serviço tem a sua porta e fala com os outros através de HTTP.
+O gateway recebe o pedido do utilizador e chama os outros serviços.
+O PM2 arranca os serviços e volta a ligá-los se algum falhar.
+O Flask permite criar um serviço web em Python com poucas linhas.
+O Python é a linguagem que usamos para criar os nossos serviços.
